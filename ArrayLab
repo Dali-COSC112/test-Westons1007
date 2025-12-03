@@ -1,0 +1,29 @@
+public class ArrayLab {
+    public static void main(String[] args) {
+
+        int[] numb = {5, 12, 7, 20, 3};
+
+        int evenCount = 0;
+        for (int i = 0; i < numb.length; i++) {
+            if (numb[i] % 2 == 0) {
+                evenCount++;
+            }
+        }
+
+        int greaterThanTenCount = 0;
+        for (int i = 0; i < numb.length; i++) {
+            if (numb[i] > 10) {
+                greaterThanTenCount++;
+            }
+        }
+
+        System.out.print("Original array: ");
+        for (int i = 0; i < numb.length; i++) {
+            System.out.print(numb[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Number of even values: " + evenCount);
+        System.out.println("Number of values greater than 10: " + greaterThanTenCount);
+    }
+}
